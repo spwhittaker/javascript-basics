@@ -1,45 +1,53 @@
 const add = (a, b) => {
-  // your code here
+  return a + b;
 };
 
 const subtract = (a, b) => {
-  // your code here
+  return a - b;
 };
 
 const multiply = (a, b) => {
-  // your code here
+  return a * b;
 };
 
 const divide = (a, b) => {
-  // your code here
+  return a / b;
 };
 
 const power = (a, b) => {
-  // your code here
+  return a ** b;
 };
 
 const round = a => {
-  // your code here
+ return Math.round(a);
 };
 
 const roundUp = a => {
-  // your code here
+  return Math.ceil(a);
 };
 
 const roundDown = a => {
-  // your code here
+  return Math.floor(a);
 };
 
 const absolute = a => {
-  // your code here
-};
+  /* if (a < 0){
+    const result = a * -1;
+  return result;}
+else {return a;}; */
 
+  return a < 0 ? a * -1 : a;
+};
 const quotient = (a, b) => {
-  // your code here
+  if ((a / b) >= 0) {
+    return Math.floor(a / b);
+  } else if ((a / b) < 0) {
+    return Math.ceil(a / b);
+  };
 };
 
 const remainder = (a, b) => {
-  // your code here
+  return a % b;
 };
 
 module.exports = {
