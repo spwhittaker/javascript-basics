@@ -66,14 +66,16 @@ const averageAge = people => {
   return averAge;
 };
 
-const createTalkingPerson = function (personName, age) {
-    const talkingPerson = {"name": personName,
-    "age" : age,
-    "introduce": function(greetedPerson) {
+const createTalkingPerson = function(personName, age) {
+  const talkingPerson = {
+    "name": personName,
+    "age": age,
+    "introduce": function (greetedPerson) {
       return `Hi ${greetedPerson}, my name is ${talkingPerson["name"]} and I am ${talkingPerson["age"]}!`;
-    }}
-    return talkingPerson;
-  };
+    }
+  }
+  return talkingPerson;
+};
 
 module.exports = {
   createPerson,
