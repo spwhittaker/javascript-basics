@@ -81,7 +81,7 @@ const containsVowels = string => {
   console.log(lowerString);
   let vowelCount = 0;
   for (let i = 0; i < string.length; i++) {
-    if (lowerString[i] === ("a" || "e" || "i" || "o" || "u")) {
+    if (lowerString[i] == "a" || "e" || "i" || "o" || "u") {
       vowelCount++;
     }
   }
