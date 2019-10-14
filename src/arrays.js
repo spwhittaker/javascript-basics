@@ -1,9 +1,12 @@
-const getNthElement = (index, array) => {
-  // your code here
+/* const getNthElement = (index, array) => {
+  let shortIndex = index;
+  while (array.length > shortIndex)
+{shortIndex = index - array.length;}
+return array[shortIndex];
 };
-
+ */
 const arrayToCSVString = array => {
-  // your code here
+  return Array.join(array);
 };
 
 const csvStringToArray = string => {

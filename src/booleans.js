@@ -80,7 +80,7 @@ const containsVowels = string => {
   const lowerString = string.toLowerCase();
   console.log(lowerString);
   let vowelCount = 0;
-  for (let i = 0; i < string.length; i++) {
+  for (let i = 0; i < lowerString.length; i++) {
     if (lowerString[i] === ("a" || "e" || "i" || "o" || "u")) {
       vowelCount++;
     }
