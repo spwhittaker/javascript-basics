@@ -1,44 +1,58 @@
-/* const getNthElement = (index, array) => {
-  let shortIndex = index;
-  while (array.length > shortIndex)
-{shortIndex = index - array.length;}
-return array[shortIndex];
-};
- */
+const getNthElement = (index, array) => {
+  const shortIndex = index % array.length;
+ console.log(shortIndex);
+   return array[shortIndex];
+ console.log(array[shortIndex]);
+ };
+
 const arrayToCSVString = array => {
-  return Array.join(array);
+  return array.join();
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(",");
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  const array2 = array.push(element);
+  
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+ const array2 = array.concat(element);
+return array2;
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+ let newArray = array.splice(index, 1);
+  return newArray;
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  const newArray = numbers.map(element => element.toString());
+  return newArray;
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const newArray = strings.map(element => element.toUpperCase());
+  return newArray;
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
-};
+  const newArray = strings.map(element => {
+    let reverseElement="";
+    for (let i = element.length-1; i > -1; i--)
+    {reverseElement += element[i];}
+return reverseElement;
+});
+return newArray;};
 
 const onlyEven = numbers => {
-  // your code here
+  const evenNumbers = numbers.filter(element => {
+  if (element % 2 === 0)
+  return element;
+  });
+  return evenNumbers;
 };
 
 const removeNthElement2 = (index, array) => {
