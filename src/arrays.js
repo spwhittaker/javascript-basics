@@ -56,23 +56,22 @@ const onlyEven = numbers => {
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
-};
+ const array2 = [...array];
+ array2.splice(index, 1);
+ return array2;};
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
-};
+  return strings.filter(e => ['a', 'e', 'i', 'o', 'u'].indexOf(e[0].toLowerCase()) !== -1);};
 
 const removeSpaces = string => {
-  // your code here
-};
+  return string.replace(/\s/g, "");};
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce((a, b) => a + b);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  return strings.sort((a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1));
 };
 
 module.exports = {
